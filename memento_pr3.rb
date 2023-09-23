@@ -85,9 +85,13 @@ puts "\n"
 editor.add_text("Це третій рядок тексту.\n")
 caretaker.add_memento(editor.create_memento)
 
+puts "Стан редактора:"
+puts editor
+puts "\n"
+
 ##caretaker.get_memento(1)
 editor.restore_memento(caretaker.get_memento(1))
 
 puts "\n"
-puts "Після повернення:"
+puts "Після скасування:"
 puts editor
